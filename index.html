@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD# - FIREBASE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        
+    </body>
+    <!-- sdk firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script> 
+    <!-- sdk firestore -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script> 
+    <!-- conexão com firebase -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAaHdAYb-McFOVV20NNA1DlBa_R3WMKqs8",
+            authDomain: "bd3-app-joao-vitor-andrade.firebaseapp.com",
+            projectId: "bd3-app-joao-vitor-andrade",
+            storageBucket: "bd3-app-joao-vitor-andrade.appspot.com",
+            messagingSenderId: "862989621667",
+            appId: "1:862989621667:web:ec04d13a00a2516490e216",
+            measurementId: "G-2174K87ZME"
+          };
+
+          //inicializar o firebase
+          firebase.initializeApp(firebaseConfig)
+
+          /*inicializa o firestore*/
+          const db = firebase.firestore()
+          console.log(db)
+    </script>
+
+    <!-- import arquivo app.js -->
+     <script src="./app.js"></script>
+</html>
